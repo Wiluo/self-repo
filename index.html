@@ -1,57 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Home — self-repo</title>
-    <meta name="description" content="Basic HTML page for the self-repo project." />
-    <style>
-        :root { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color-scheme: light dark; }
-        body { margin: 0; line-height: 1.5; display: flex; min-height: 100vh; flex-direction: column; }
-        header, footer { background: #111827; color: #fff; padding: 1rem; }
-        header { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
-        nav a { color: #9ca3af; text-decoration: none; margin-left: 1rem; }
-        main { padding: 2rem; flex: 1; max-width: 900px; margin: 0 auto; }
-        .hero { border: 1px solid #e5e7eb; padding: 1.5rem; border-radius: 8px; background: #fff; }
-        footer { font-size: 0.9rem; text-align:center; }
-        @media (prefers-color-scheme: dark) {
-            body { background: #0b1220; color: #e6eef8; }
-            .hero { background: #071126; border-color: #122033; }
-            nav a { color: #9fb4d3; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div>
-            <strong>self-repo</strong>
-        </div>
-        <nav aria-label="Main navigation">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-    <main>
-        <section class="hero" aria-labelledby="welcome">
-            <h1 id="welcome">Welcome</h1>
-            <p>This is a simple starter HTML page for the self-repo project. Use this file as the entry point for your site and expand sections as needed.</p>
-            <ul>
-                <li>Keep content semantic</li>
-                <li>Separate styles into a CSS file when the project grows</li>
-                <li>Use accessible navigation and headings</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <small>&copy; <span id="year"></span> self-repo</small>
-    </footer>
-
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
-</html>
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
